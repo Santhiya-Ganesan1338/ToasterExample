@@ -41,3 +41,10 @@ dependencies {
     implementation group: 'com.github.dcendents', name: 'android-maven-gradle-plugin', version: '2.1'
 
 }
+ext {
+    PUBLISH_GROUP_ID = 'org.wouasdk.android'
+    PUBLISH_VERSION = '1.0.0'
+    PUBLISH_ARTIFACT_ID = 'toaster-message'
+}
+
+apply from: "${rootProject.projectDir}/scripts/publish-mavencentral.gradle"
